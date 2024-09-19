@@ -32,4 +32,4 @@ Add the following lines to your HTML `<head>` section to include the styles and 
 
 ## Documentation
 
-For detailed usage instructions and to learn about all available features, visit the [Code Fusion Wiki](link-to-wiki). 
+For detailed usage instructions and to learn about all available features, visit the [Code Fusion Wiki](https://github.com/siyam-yas/CodeFusion/wiki). 
