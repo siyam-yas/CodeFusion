@@ -1,0 +1,69 @@
+.cf-codeview-wrapper {
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: 'Courier New', monospace;
+    margin: 20px 0;
+  }
+  
+  .cf-codeview-wrapper[data-theme="dark"] {
+    background-color: #263238;
+    color: #cfd8dc;
+  }
+  
+  .cf-codeview-wrapper[data-theme="light"] {
+    background-color: #eceff1;
+    color: #37474f;
+  }
+  
+  .cf-code-header {
+    background-color: #37474f;
+    color: #fff;
+  }
+  
+  .cf-code-header .cf-buttons button {
+    background-color: transparent;
+    border: none;
+  }
+  
+  .cf-code-header .cf-title {
+    font-weight: bold;
+    color: #cfd8dc;
+  }
+  
+  .cf-code-body {
+    display: flex;
+  }
+  
+  .line-numbers {
+    padding: 10px;
+    user-select: none;
+    text-align: right;
+    color: #90a4ae;
+  }
+  
+  pre.code-container {
+    padding: 10px;
+    margin: 0;
+    background: transparent;
+    border-left: 2px solid #78909c;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-x: auto;
+  }
+  
+  .cf-buttons button:hover {
+    color: #fbc02d;
+  }
+  
+  [data-theme="light"] .cf-code-header {
+    background-color: #90a4ae;
+  }
+  
+  [data-theme="light"] .line-numbers {
+    color: #607d8b;
+  }
+  
+  [data-theme="light"] pre.code-container {
+    border-left-color: #b0bec5;
+  }
+  
