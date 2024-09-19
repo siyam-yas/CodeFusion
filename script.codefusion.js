@@ -74,6 +74,11 @@ class CFCodeView extends HTMLElement {
         prismScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/prism.min.js';
         document.head.appendChild(prismScript);
   
+        // Load Python support for Prism.js
+        const prismPythonScript = document.createElement('script');
+        prismPythonScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/components/prism-python.min.js';
+        document.head.appendChild(prismPythonScript);
+  
         // Load FontAwesome
         const fontAwesomeLink = document.createElement('link');
         fontAwesomeLink.rel = 'stylesheet';
@@ -87,7 +92,9 @@ class CFCodeView extends HTMLElement {
         document.head.appendChild(bootstrapLink);
   
         // Wait for all libraries to load
-        prismScript.onload = () => resolve();
+        prismScript.onload = () => {
+          prismPythonScript.onload = () => resolve();
+        };
       });
     }
   
