@@ -1,3 +1,6 @@
+  //---------------------------------------
+  // Mark 1 : CodeFusion CodeView (Starting)
+  //---------------------------------------
 class CFCodeView extends HTMLElement {
     constructor() {
       super();
@@ -111,4 +114,8 @@ class CFCodeView extends HTMLElement {
   
   // Register the custom element
   customElements.define('cf-codeview', CFCodeView);
+
+  //---------------------------------------
+  // Mark 1 : CodeFusion CodeView (Ending)
+  //---------------------------------------
   
