@@ -116,6 +116,6 @@ class CFCodeView extends HTMLElement {
   customElements.define('cf-codeview', CFCodeView);
 
   //---------------------------------------
-  // Mark 1 : CodeFusion CodeView (Ending)
+  // Mark 1 : CodeFusion CodeView (Ending).
   //---------------------------------------
   
