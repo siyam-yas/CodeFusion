@@ -119,3 +119,42 @@ class CFCodeView extends HTMLElement {
   // Mark 1 : CodeFusion CodeView (Ending).
   //---------------------------------------
   
+
+  //---------------------------------------
+  // Mark 1 : CodeFusion Navbar (Starting).
+  //---------------------------------------
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const closeIcon = document.getElementById('close-icon');
+    const navMenu = document.querySelector('cf-nav');
+    
+    // Initially hide the nav menu (hidden off the screen to the right)
+    navMenu.style.right = '-300px';
+
+    // Show nav menu when hamburger icon is clicked
+    hamburgerIcon.addEventListener('click', function () {
+        navMenu.style.right = '0';
+    });
+
+    // Hide nav menu when close icon is clicked
+    closeIcon.addEventListener('click', function () {
+        navMenu.style.right = '-300px';
+    });
+
+    // Handle redirection for nav buttons
+    document.querySelectorAll('cf-navbtn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            const redirectTo = btn.getAttribute('redirect');
+            if (redirectTo) {
+                window.location.href = redirectTo;
+            }
+        });
+    });
+});
+
+
+
+  //---------------------------------------
+  // Mark 1 : CodeFusion Navbar (Ending).
+  //---------------------------------------
