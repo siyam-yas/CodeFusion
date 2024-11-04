@@ -1,4 +1,4 @@
-# CodeFusion (Alpha)
+# CodeFusion (Discontinued - It doesn’t work anymore.)
 
 **Code Fusion** is a versatile CSS and JS library designed to enhance the visual presentation and functionality of various web components. It includes features for syntax-highlighted code snippets, interactive elements, and customizable themes. 
 
